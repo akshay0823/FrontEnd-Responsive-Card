@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+  background-color: rgba(237, 213, 213, 0.35);
+}
+/* My card */
+.main-container {
+  width: 600px;
+  height: 400px;
+  box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  overflow: hidden;
+}
+/* Top section of the card */
+.top-section {
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  padding: 20px;
+}
+.top-section h3 {
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 5px 0;
+  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.31);
+  color: #2ab2af;
+}
+.top-section h4 {
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 10px 0;
+  color: #c0df34;
+}
+.top-section p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 20px 0;
+  color: #98a6bd;
+}
+/* Bottom section of the card */
+.bottom-section {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  color: white;
+  border: 1px solid rebeccapurple;
+}
+/* Left section of the card */
+.left-section {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  padding: 10px 30px;
+  background-color: #2ab2af;
+}
+
+.left-section h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 20px 0;
+}
+.left-section div {
+  margin: 20px 0;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+.left-section span {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  position: relative;
+  opacity: 0.8;
+  top: -4px;
+}
+.left-section p {
+  font-weight: 700;
+  margin: 20px 0;
+}
+.left-section button {
+  font-weight: 700;
+  margin-top: 10px;
+  width: 90%;
+  height: 18%;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: #c0df34;
+  color: white;
+  box-shadow: 2px 2px 4px black;
+  letter-spacing: 2px;
+}
+.left-section button:hover {
+  background-color: yellowgreen;
+  color: black;
+  transform: scale(1.1);
+  letter-spacing: 4px;
+}
+
+/* Right section of the card */
+.right-section {
+  width: 50%;
+  height: 100%;
+  background-color: #2ebfbd;
+  padding: 20px;
+}
+.right-section h3 {
+  margin-bottom: 10px;
+}
+.right-section ul {
+  list-style-type: none;
+}
+.right-section li {
+  margin-bottom: 5px;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 540px ) {
+  body{
+    padding: 15px 10px;
+  }
+  .main-container {
+    width: 350px;
+    height: 700px;
+  }
+  .top-section {
+    height: 30%;
+    padding: 10px;
+  }
+  .top-section h3 {
+    font-size: 1.5rem;
+  }
+  .top-section h4 {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+  }
+  .top-section p {
+    font-size: 1.1rem;
+    padding: 0px;
+    margin: 10px 0;
+  }
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+  }
+  .left-section,
+  .right-section {
+    width: 100%;
+    padding: 5px 10px;
+    height: 50%;
+  }
+  .left-section h3 {
+    margin-top: 10px;
+  }
+  .right-section{
+    padding: 15px;
+  }
+  .right-section h3{
+    font-size: 1.5rem;
+  }
+  .right-section li{
+    font-size: 1.1rem;
+  }
+}
